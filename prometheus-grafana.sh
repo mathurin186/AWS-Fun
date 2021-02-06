@@ -15,7 +15,7 @@ cd pushgateway-0.8.0.linux-amd64/
 cd ../
 wget https://github.com/prometheus/prometheus/releases/download/v2.9.2/prometheus-2.9.2.linux-amd64.tar.gz
 tar xvzf prometheus-2.9.2.linux-amd64.tar.gz 
-wget https://github.com/mathurin186/AWS-Fun/blob/main/prometheus.yml 	# Download the custom config file for Prometheus 
+wget https://raw.githubusercontent.com/mathurin186/AWS-Fun/main/prometheus.yml 	# Download the custom config file for Prometheus 
 rm prometheus-2.9.2.linux-amd64/prometheus.yml			     	# Remove the original config file and replace with the custom	
 cp prometheus.yml prometheus-2.9.2.linux-amd64/ 
 cd prometheus-2.9.2.linux-amd64/
