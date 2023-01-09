@@ -1,3 +1,3 @@
 # AWS-Fun
 
-# New Test
+In this repo we're looking at various tools & scripts to automate your life. 
