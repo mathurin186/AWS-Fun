@@ -1,6 +1,6 @@
 variable "ami" {
      type = string
-     default = "ami-0a1a70369f0fce06a"
+     default = "ami-1234"
 }
 
 variable "ec2_instance_type" {
@@ -15,15 +15,15 @@ variable "number_of_instances" {
 
 variable "vpc_security_group" {
      type = string
-     default = "sg-03853dc86be00b9ce"
+     default = "sg-01234"
 }
 
 variable "subnet-id" {
      type = string
-     default = "subnet-61774006"
+     default = "subnet-61234"
 }
 
 variable "keyname" {
      type = string
-     default = "sysdig-comp"
+     default = "my-key"
 }
