@@ -12,13 +12,14 @@ Here are the components you will need from AWS:
 *  [instance_type](https://aws.amazon.com/ec2/instance-types/) 
 *  [vpc_security_group_ids](https://docs.aws.amazon.com/managedservices/latest/userguide/find-SGs.html) 
 *  [subnet_id](https://docs.aws.amazon.com/managedservices/latest/userguide/find-subnet.html) 
-*  [key_name](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html)
+*  [key_name](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html)  <-- This may seem confusing, but you need a security key in order to SSH into the running EC2 instance.
 
 Ensure that you populate the Variables.tf file with all of the information above. Do not use the main.tf file with secret information. 
 
 Note: You can edit and push your terraform main.tf and outputs.tf files to your github repo, but don't push the variables as it will container secret information.
 
 ## Commands to run when ready
-'''
+```
 terraform init && terraform apply
-'''
+```
+
