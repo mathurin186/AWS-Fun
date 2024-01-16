@@ -8,9 +8,17 @@ This project is specifically for those who wish to develop more with Docker. Wor
 
 ## Getting Started
 Here are the components you will need from AWS:
-*  ami
-*  instance_type 
-*  vpc_security_group_ids 
-*  subnet_id 
-*  key_name
+*  [ami](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/tkv-create-ami-from-instance.html)
+*  [instance_type](https://aws.amazon.com/ec2/instance-types/) 
+*  [vpc_security_group_ids](https://docs.aws.amazon.com/managedservices/latest/userguide/find-SGs.html) 
+*  [subnet_id](https://docs.aws.amazon.com/managedservices/latest/userguide/find-subnet.html) 
+*  [key_name](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html)
 
+Ensure that you populate the Variables.tf file with all of the information above. Do not use the main.tf file with secret information. 
+
+Note: You can edit and push your terraform main.tf and outputs.tf files to your github repo, but don't push the variables as it will container secret information.
+
+## Commands to run when ready
+'''
+terraform init && terraform apply
+'''
