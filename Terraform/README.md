@@ -18,7 +18,7 @@ Ensure that you populate the Variables.tf file with all of the information above
 
 Note: You can edit and push your terraform main.tf and outputs.tf files to your github repo, but don't push the variables as it will container secret information.
 
-![](https://github.com/mathurin186/AWS-Fun/blob/main/Terraform/images/bar.png | width=100 height=300)
+![](https://github.com/mathurin186/AWS-Fun/blob/main/Terraform/images/ami.png)
 
 ## Commands to run when ready
 ```
