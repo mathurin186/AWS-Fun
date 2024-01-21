@@ -3,6 +3,11 @@ variable "ami" {
      default = "ami-1234"
 }
 
+variable "profile" {
+     type = string
+     default = "profile_of_your_awscli"
+}
+
 variable "ec2_instance_type" {
      type = string
      default = "t2.micro"
