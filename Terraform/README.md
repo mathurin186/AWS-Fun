@@ -13,6 +13,7 @@ Here are the components you will need from AWS:
 *  [vpc_security_group_ids](https://docs.aws.amazon.com/managedservices/latest/userguide/find-SGs.html) 
 *  [subnet_id](https://docs.aws.amazon.com/managedservices/latest/userguide/find-subnet.html) 
 *  [key_name](https://docs.aws.amazon.com/IAM/latest/UserGuide/security-creds.html)  <-- This may seem confusing, but you need a security key in order to SSH into the running EC2 instance.
+*  [profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) <-- If you are running with multiple aws cli profiles, you will need to specify which you'd like to run with this script
 
 Ensure that you populate the Variables.tf file with all of the information above. Do not use the main.tf file with secret information. 
 
@@ -24,4 +25,3 @@ Note: You can edit and push your terraform main.tf and outputs.tf files to your 
 ```
 terraform init && terraform apply
 ```
-
