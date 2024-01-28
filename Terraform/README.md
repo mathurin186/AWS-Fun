@@ -25,3 +25,8 @@ Note: You can edit and push your terraform main.tf and outputs.tf files to your 
 ```
 terraform init && terraform apply
 ```
+
+Don't leave this running. When you're done, simply apply the below command:
+```
+terraform destroy
+```
