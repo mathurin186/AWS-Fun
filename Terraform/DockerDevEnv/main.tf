@@ -10,8 +10,8 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-west-1"
-  profile = "rocinante"
+  region  = var.region
+  profile = var.profile
 }
 
 resource "aws_instance" "app_server" {
