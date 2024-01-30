@@ -3,6 +3,11 @@ variable "ami" {
      default = "ami-1234"
 }
 
+variable "region" {
+     type = string
+     default = "us-east-1"
+}
+
 variable "profile" {
      type = string
      default = "profile_of_your_awscli"
