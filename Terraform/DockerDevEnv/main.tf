@@ -12,7 +12,6 @@ terraform {
 provider "aws" {
   region  = "us-west-1"
   profile = "rocinante"
-  region  = "us-west-2"
   #profile = "profile"
 
 }
