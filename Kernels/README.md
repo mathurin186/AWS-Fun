@@ -20,4 +20,16 @@ System calls and security: Receive requests for service from the processes
 
 The kernel, if implemented properly, is invisible to the user, working in its own little world known as kernel space, where it allocates memory and keeps track of where everything is stored. What the user sees—like web browsers and files—are known as the user space. These applications interact with the kernel through a system call interface (SCI).
 
-Think about it like this: The kernel is a busy personal assistant for a powerful executive (the hardware). It’s the assistant’s job to relay messages and requests (processes) from employees and the public (users) to the executive, to remember what is stored where (memory), and to determine who has access to the executive at any given time and for how long. 
+Think about it like this: The kernel is a busy personal assistant for a powerful executive (the hardware). It’s the assistant’s job to relay messages and requests (processes) from employees and the public (users) to the executive, to remember what is stored where (memory), and to determine who has access to the executive at any given time and for how long.
+
+Keep in mind the attached bash script in this repo is for an automated deployment, but for documentation sake, let's go over the commands:
+
+```
+sudo add-apt-repository ppa:cappelikan/ppa
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y mainline
+```
+
+Under the assumtion that you are running an Ubuntu style of Linux, add the needed repo and update your system. Following that will be the insatllation.
+
+This tool can be used as a GUI and in the CLI. 
