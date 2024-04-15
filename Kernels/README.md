@@ -33,3 +33,9 @@ sudo apt install -y mainline
 Under the assumtion that you are running an Ubuntu style of Linux, add the needed repo and update your system. Following that will be the insatllation.
 
 This tool can be used as a GUI and in the CLI. 
+
+For the CLI, follow the below commands to run the install. Don't forget that you can view all the suported kernel versions [here](https://kernel.ubuntu.com/mainline/)
+
+```
+sudo mainline --install <version>
+```
